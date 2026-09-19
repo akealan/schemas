@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Pillar Game",
+  "type": "object",
+  "required": ["name", "version", "areas"],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "areas": {
+      "type": "object",
+      "default": {}
+    }
+  },
+  "additionalProperties": false
+}
